@@ -1,0 +1,155 @@
+.page2 {
+  background-color: #000;
+}
+.component {
+  width: 100%;
+  height: 100%;
+}
+.Slide {
+  height: 300px;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.my-div {
+  height: 200px;
+  position: relative;
+  margin-top: -68px;
+  top: 50%;
+}
+.my-div div {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+}
+.my-div div:first-child {
+  position: relative;
+}
+.progress-border {
+  width: 200px;
+  height: 5px;
+  position: absolute;
+  background: #b3b3b3;
+  top: 20px;
+  left: 20px;
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.progress-line {
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+.videobg-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.videobg-container .videobg-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 1;
+  opacity: 0.3;
+}
+.videobg-container .video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.videobg-container .video #background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+.intro-paragraph {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+  padding: 25px;
+  width: 420px;
+  color: #fff;
+  text-align: left;
+  transition: opacity 2s;
+}
+.scroll-down {
+  position: absolute;
+  width: 150px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -75px;
+  z-index: 50;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+}
+.scroll-down span {
+  transition: all 0.3s ease;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  top: -24px;
+  opacity: 1;
+}
+.scroll-down:hover .icon {
+  background: #fff;
+  border: 2px solid #fff;
+}
+.scroll-down:hover span {
+  opacity: 0;
+}
+.icon {
+  transition: all 0.3s ease;
+  width: 26px;
+  height: 44px;
+  display: block;
+  border-radius: 13px;
+  border: 2px solid #b3b3b3;
+  margin: 0 auto;
+}
+.icon:before {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  width: 6px;
+  height: 6px;
+  animation: scrollDownKnobAnimation 2s ease infinite;
+  position: absolute;
+  top: 6px;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+  content: '';
+  left: 50%;
+  margin-left: -3px;
+}
+@keyframes scrollDownKnobAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
